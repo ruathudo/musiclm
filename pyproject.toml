@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "music21>=9.5.0",
+    "pandas>=2.2.3",
+    "pandas-parallel-apply>=2.2",
     "setuptools>=78.1.0",
     "torch>=2.6.0",
     "unsloth>=2025.3.19",

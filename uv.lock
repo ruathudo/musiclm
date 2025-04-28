@@ -1117,6 +1117,8 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "music21" },
+    { name = "pandas" },
+    { name = "pandas-parallel-apply" },
     { name = "setuptools" },
     { name = "torch" },
     { name = "unsloth" },
@@ -1131,6 +1133,8 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "music21", specifier = ">=9.5.0" },
+    { name = "pandas", specifier = ">=2.2.3" },
+    { name = "pandas-parallel-apply", specifier = ">=2.2" },
     { name = "setuptools", specifier = ">=78.1.0" },
     { name = "torch", specifier = ">=2.6.0" },
     { name = "unsloth", specifier = ">=2025.3.19" },
@@ -1350,6 +1354,21 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/25/b0/98d6ae2e1abac4f35230aa756005e8654649d305df9a28b16b9ae4353bff/pandas-2.2.3-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1db71525a1538b30142094edb9adc10be3f3e176748cd7acc2240c2f2e5aa3a4", size = 11871013 },
     { url = "https://files.pythonhosted.org/packages/cc/57/0f72a10f9db6a4628744c8e8f0df4e6e21de01212c7c981d31e50ffc8328/pandas-2.2.3-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:15c0e1e02e93116177d29ff83e8b1619c93ddc9c49083f237d4312337a61165d", size = 15711620 },
     { url = "https://files.pythonhosted.org/packages/ab/5f/b38085618b950b79d2d9164a711c52b10aefc0ae6833b96f626b7021b2ed/pandas-2.2.3-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:ad5b65698ab28ed8d7f18790a0dc58005c7629f227be9ecc1072aa74c0c1d43a", size = 13098436 },
+]
+
+[[package]]
+name = "pandas-parallel-apply"
+version = "2.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ff/b5/5fcc44f8b372bf93ca311432391ac310817ccb1a0c3e3fdfef1ffe6d3036/pandas-parallel-apply-2.2.tar.gz", hash = "sha256:0c07dc5964ef7a635f8a635f7d158eb2a22bfd3cf20f580e60827b6df4952099", size = 10346 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2f/1c/78646c2d360417ee44495e998c6aa7985b363a3801e2cf4a794f0538e073/pandas_parallel_apply-2.2-py3-none-any.whl", hash = "sha256:a9e284312440e135c3a23f7443b63627b91fd1f4a31228971687bc84691b8f41", size = 9292 },
 ]
 
 [[package]]
