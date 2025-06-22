@@ -12,3 +12,4 @@ notebooks/data
 notebooks/unsloth_compiled_cache
 notebooks/lora_model
 notebooks/outputs
+notebooks/results
